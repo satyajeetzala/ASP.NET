@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    HELLO EVERYONE
+                    <asp:Image ID="Image2" runat="server" Height="64px" 
+                        ImageUrl="~/images/10910217.png" Width="100px" />
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#99CC00" BorderColor="#006600" 
+                    Font-Size="X-Large" ForeColor="Black" onmenuitemclick="Menu1_MenuItemClick" 
+                    Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/RADIO.aspx" Text="UNIT 1" Value="UNIT 1">
+                            <asp:MenuItem NavigateUrl="~/RADIO.aspx" Text="RADIO BUTTON" Value="New Item">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="New Item" Value="New Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="UNIT 2" Value="UNIT 2"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+        <asp:Label ID="Label2" runat="server" Font-Size="Medium" ForeColor="White" 
+            Text="DEVELOPED BY SATYAJEET"></asp:Label>
+        
+    </div>
+    </form>
+</body>
+</html>
