@@ -4,14 +4,14 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-   <div style="text-align: center;">
-    <asp:ImageMap ID="ImageMap1" runat="server" Height="772px" Width="606px" 
-           ImageUrl="~/Styles/india.svg.png" >
+    <div style="text-align: center;">
+        <asp:ImageMap ID="ImageMap1" runat="server" Height="772px" Width="606px" ImageUrl="~/Styles/india.svg.png"
+            onclick="ImageMap1_Click" HotSpotMode="PostBack" OnPolygonClick="ImageMap1_PolygonClick">
         <asp:PolygonHotSpot Coordinates="172,193,168,192,164,190,160,186,164,172,166,161,167,149,181,142,189,137,199,153,211,163,215,170,213,181,209,189,195,189,197,196,188,199,179,199" 
             HotSpotMode="Navigate" NavigateUrl="goldentemple.jpg" />
              
     <asp:PolygonHotSpot Coordinates="146,191,157,197,165,202,164,211,180,216,190,233,194,243,196,251,201,254,206,252,213,252,223,262,230,272,229,281,212,295,207,304,204,315,206,327,211,331,211,341,202,346,197,346,193,348,191,345,188,334,180,333,178,326,171,330,164,336,164,350,164,357,161,367,156,374,148,374,142,366,140,362,134,359,131,348,120,342,105,339,107,335,93,334,78,326,74,313,67,301,61,296,60,289,58,276,50,270,50,267,56,252,64,250,78,255,92,252,110,240,119,229,130,217,143,201,143,195" 
-        HotSpotMode="Navigate" NavigateUrl="rajistan.jpg" />
+        HotSpotMode="Navigate" NavigateUrl="~/Styles/rajasthan.jpg" Target="_self" />
 
     <asp:PolygonHotSpot Coordinates="168,198,170,205,176,208,183,214,188,219,194,231,207,235,222,218,223,211,225,197,232,193,232,187,228,187,220,176,219,188,212,194,203,197,193,200,182,202,178,207,172,200" 
         HotSpotMode="Navigate" NavigateUrl="hariyanakigdomofdream.jpg" />
@@ -44,13 +44,13 @@
         HotSpotMode="Navigate" NavigateUrl="kerla.jpg" />
 
     <asp:PolygonHotSpot Coordinates="218,776,222,769,220,759,221,747,223,742,221,738,219,724,217,715,210,720,207,706,200,692,211,691,219,689,228,685,231,674,232,663,241,661,250,658,261,655,271,651,286,648,296,641,295,658,285,669,284,692,283,709,282,718,274,719,270,730,264,741,261,750,254,756,244,760,238,770,234,776,224,781,232,778" 
-        HotSpotMode="Navigate" NavigateUrl="tamilnadu.jpg" />
+        HotSpotMode="Navigate"  />
 
     <asp:PolygonHotSpot Coordinates="222,781" 
         HotSpotMode="Navigate" NavigateUrl="#" />
 
     <asp:PolygonHotSpot Coordinates="291,764,290,774,286,787,284,796,285,808,289,820,292,827,295,831,305,832,314,827,320,822,323,815,322,805,316,795,311,782,304,768,301,766" 
-        HotSpotMode="Navigate" NavigateUrl="srilanka.jpg" />
+        HotSpotMode="Navigate"  />
 
     <asp:PolygonHotSpot Coordinates="306,489,316,486,318,473,314,466,308,461,313,451,311,439,309,424,314,417,322,402,330,395,342,388,346,378,348,368,341,366,353,363,364,362,376,362,380,369,386,376,391,382,393,388,384,396,381,407,377,416,371,427,367,429,362,426,351,429,348,442,346,454,347,461,338,462,336,470,339,475,340,480,340,488,336,495,330,504,324,512,319,516,310,501" 
         HotSpotMode="Navigate" NavigateUrl="CGchitrakoot.jpg" />
@@ -60,9 +60,11 @@
 <asp:PolygonHotSpot Coordinates="215,218,212,229,224,253,232,248,241,227,234,220,226,215,220,219,221,216" HotSpotMode="Navigate" NavigateUrl="delhi.jpg" />
 <asp:PolygonHotSpot Coordinates="258,211" HotSpotMode="Navigate" NavigateUrl="#" />
 <asp:PolygonHotSpot Coordinates="168,198,170,205,176,208,183,214,188,219,194,231,207,235,222,218,223,211,225,197,232,193,232,187,228,187,220,176,219,188,212,194,203,197,193,200,182,202,178,207,172,200" HotSpotMode="Navigate" NavigateUrl="hariyanakigdomofdream.jpg" />
-<asp:PolygonHotSpot Coordinates="146,191,157,197,165,202,164,211,180,216,190,233,194,243,196,251,201,254,206,252,213,252,223,262,230,272,229,281,212,295,207,304,204,315,206,327,211,331,211,341,202,346,197,346,193,348,191,345,188,334,180,333,178,326,171,330,164,336,164,350,164,357,161,367,156,374,148,374,142,366,140,362,134,359,131,348,120,342,105,339,107,335,93,334,78,326,74,313,67,301,61,296,60,289,58,276,50,270,50,267,56,252,64,250,78,255,92,252,110,240,119,229,130,217,143,201,143,195" HotSpotMode="Navigate" NavigateUrl="rajistan.jpg" />
+<asp:PolygonHotSpot Coordinates="146,191,157,197,165,202,164,211,180,216,190,233,194,243,196,251,201,254,206,252,213,252,223,262,230,272,229,281,212,295,207,304,204,315,206,327,211,331,211,341,202,346,197,346,193,348,191,345,188,334,180,333,178,326,171,330,164,336,164,350,164,357,161,367,156,374,148,374,142,366,140,362,134,359,131,348,120,342,105,339,107,335,93,334,78,326,74,313,67,301,61,296,60,289,58,276,50,270,50,267,56,252,64,250,78,255,92,252,110,240,119,229,130,217,143,201,143,195" HotSpotMode="Navigate" />
 <asp:PolygonHotSpot Coordinates="172,193,168,192,164,190,160,186,164,172,166,161,167,149,181,142,189,137,199,153,211,163,215,170,213,181,209,189,195,189,197,196,188,199,179,199" HotSpotMode="Navigate" NavigateUrl="panjabgoldentemple.jpg" />
 
        </asp:ImageMap>
-</div>
+       < <asp:Image ID="Image1" runat="server" Height="205px" Width="237px" />
+        <br />
+    </div>
 </asp:Content>
