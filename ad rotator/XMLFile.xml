@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>https://img.freepik.com/free-photo/creative-light-bulb-abstract-glowing-blue-background-generative-ai_188544-8090.jpg</ImageUrl>
+    <NavigateUrl>http://www.example.com/ad1</NavigateUrl>
+    <AlternateText>Advertisement 1</AlternateText>
+    <Impressions>100</Impressions>
+    <Keyword>keyword1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>https://img.freepik.com/free-vector/image-upload-concept-illustration_114360-996.jpg</ImageUrl>
+    <NavigateUrl>http://www.example.com/ad2</NavigateUrl>
+    <AlternateText>Advertisement 2</AlternateText>
+    <Impressions>200</Impressions>
+    <Keyword>keyword2</Keyword>
+  </Ad>
+  <!-- Add more ad entries as needed -->
+</Advertisements>
+
